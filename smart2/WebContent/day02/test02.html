@@ -2,9 +2,52 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Selector2</title>
+<link type="text/css" rel="stylesheet" href="../css/day02/test02.css">
 </head>
 <body>
-
+<!-- 
+	레디오버튼과 체크박스 태그중 선택된 태그들만 크기를 키워보자.
+	20px * 20px 
+	
+	* : 곱하기
+	/ : 나누기
+	+ : 더하기
+	- : 빼기
+	% : 나머지 연산자
+ -->
+ 	<div class="content">
+ 		<h1 class="title">Checked 상태 선택자</h1>
+ 		<div class="fr">
+ 			<div>
+ 				<label class="ft16 bold">성 별 : </label>
+ 				<div id="gfr">
+	 				<div>
+	 					<input type="radio" name="gen" value="M"><span class="ft16 bold">남자</span>
+	 				</div>
+	 				<div>
+	 					<input type="radio" name="gen" value="F"><span class="ft16 bold">여자</span>
+	 				</div>
+ 				</div>
+ 			</div>
+ 			<hr><!-- float 속성 때문에 hr태그가 오른쪽으로 옴 -->
+ 			<div style="float: left;">수강과목 : </div> 
+ 			<br>
+ 			<div class="bold cb" style="text-align: left;">
+			 		<div>
+					 	<input type="checkbox" >Java</input>
+					 	<input type="checkbox" >Oracle</input>
+					</div>
+				 	<div>
+					 	<input type="checkbox" >HTML</input>
+						<input type="checkbox" >JavaScript</input>
+		 			</div>
+		 			<div>
+						<input type="checkbox" >JSP</input>
+						<input type="checkbox" >python</input>
+					</div>
+ 			</div>
+ 			<hr>
+ 	</div>
 </body>
 </html>

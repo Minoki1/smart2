@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>input tag property test</title>
+<link type="text/css" rel="stylesheet" href="../css/day02/test03.css">
+</head>
+<body>
+	<form method="get" action="test01.html" name="frm" id="frm" class="frm">
+		<h1 class="title">회원가입</h1>
+		
+		<div>
+			<label for="name">Name : </label>
+			<input type="text" name="name" id="name" value="jennie" readonly>
+		</div>
+		<div>
+			<label for="id">ID : </label>
+			<input type="text" name="id" id="id">
+		</div>
+		<div>
+			<label for="id">PW : </label>
+			<input type="password" name="pw" id="pw" value="12345" disabled>
+		</div>
+		<div>
+			<label for="mail">Mail : </label>
+			<input type="text" name="mail" id="mail">
+		</div>
+		
+		<span>
+			<button type="button" id="hbtn">Home</button>
+			<button type="reset" id="rbtn">Reset</button>
+			<button type="submit" id="sbtn">Submit</button>
+		</span>
+		<h5>이것은 코드인가 소설인가?!?!?</h5><!-- input 태그만 서버에 전달 -->
+	</form>
+</body>
+</html>
