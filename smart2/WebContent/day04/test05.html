@@ -14,17 +14,8 @@
 		<div class="col" id="c2"><p/></div>
 		<div class="col"><p/></div>
 	</div>
-<script type="text/javascript">
-	document.getElementById('click').onclick = function(){
-		alert('이벤트 발생~!');
-		var pval = document.getElementById('c2').style.display;
-		alert(pval);
-		if(pval == 'none' || !pval){
-			document.getElementById('c2').style.display = 'inline-block';
-		} else{
-			document.getElementById('c2').style.display = 'none';
-		}
-/* 
+
+<!--  
    연산자의 종류
       ==> 연산에 사용되는 기호
          -> 산술 연산자 : +, -, *, /, %   
@@ -38,9 +29,20 @@
                         10 === '10'은 거짓
          -> 증감 연산자 : ++, --
          -> 논리 연산자 : and, or, &, |, &&, ||
-*/
-		
-		
-</script>
+ -->
+<script type="text/javascript">
+	document.getElementById('click').onclick = function(){
+		/* alert('이벤트 발생~!'); */
+		/* console.log('이벤트 발생~!'); */
+		var pval = document.getElementById('c2').style.display;
+		console.log(pval);
+		/* alert(pval); */
+		if(pval == 'none' || !pval){
+			document.getElementById('c2').style.display = 'inline-block';
+		} else{
+			document.getElementById('c2').style.display = 'none';
+		}
+	}	
+</script>		
 </body>
 </html>
