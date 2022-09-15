@@ -32,6 +32,7 @@
    margin-bottom: 20px;
 }
 
+
 /* 패딩 관련 클래스 */
 .pdl10{
    padding-left: 10px;
@@ -50,6 +51,12 @@
 }
 
 /* 폰트 관련 클래스 */
+.ft12{
+   font-size: 12pt;   
+}
+.ft14{
+   font-size: 14pt;   
+}
 .ft16{
    font-size: 16pt;   
 }
@@ -83,4 +90,15 @@
 }
 .hidden{
    display: hidden;
+}
+/* 버튼 사이즈 클래스 */
+.w80{
+	width: 80px;
+}
+.h9{
+	height: 9px;
+}
+
+.h30{
+	height: 30px;
 }
