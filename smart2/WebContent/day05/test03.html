@@ -41,7 +41,8 @@
 						<label for="pw">P W : </label>
 					</div>
 					<div class="w3-col m9">
-						<input type="password" name="pw" id="pw" class="w3-col m10 w3-input w3-border">
+						<input type="password" name="pw" id="pw" class="w3-col m10 w3-input w3-border"
+																placeholder="비밀번호를 입력하세요!"required>
 					</div>
 				</div>
 				<!-- 비밀번호 확인 -->
@@ -93,31 +94,35 @@
 						<label for="avata">Avatar : </label>
 					</div>
 					<div class="w3-col m8">
-						<div class="wd30 inlineBlock">
-							<label for="mAvata1" class="block ht100 mgl35"><img alt="mAvata1" class="wd30 block ht100 wd100" src="../img/mAbatar1.jpg"></label>
-							<input type="radio" name="avata" id="mAvata1" class="w3-col m4 mgl45">
-						</div>				
-						<div class="wd30 inlineBlock">
-							<label for="mAvata2" class="block ht100 mgl35"><img alt="mAvata1" class="wd30 block ht100 wd100" src="../img/mAbatar2.jpg"></label>
-							<input type="radio" name="avata" id="mAvata2" class="w3-col m4 mgl45">
-						</div>	
-						<div class="wd30 inlineBlock">
-							<label for="mAvata3" class="block ht100 mgl35"><img alt="mAvata1" class="wd30 block ht100 wd100" src="../img/mAbatar3.jpg"></label>
-							<input type="radio" name="avata" id="mAvata3" class="w3-col m4 mgl45">
-						</div>	
-						<div class="wd30 inlineBlock">
-							<label for="wAvata1" class="block ht100 mgl35"><img alt="mAvata1" class="wd30 block ht100 wd100" src="../img/wAbatar1.jpg"></label>
-							<input type="radio" name="avata" id="wAvata1" class="w3-col m4 mgl45">
-						</div>				
-						<div class="wd30 inlineBlock">
-							<label for="wAvata2" class="block ht100 mgl35"><img alt="mAvata1" class="wd30 block ht100 wd100" src="../img/wAbatar2.jpg"></label>
-							<input type="radio" name="avata" id="wAvata2" class="w3-col m4 mgl45">
-						</div>	
-						<div class="wd30 inlineBlock">
-							<label for="wAvata3" class="block ht100 mgl35"><img alt="mAvata1" class="wd30 block ht100 wd100" src="../img/wAbatar3.jpg"></label>
-							<input type="radio" name="avata" id="wAvata3" class="w3-col m4 mgl45">
-						</div>	
-					</div>	
+	                  <div id="mCbxDiv">
+	                     <div class="wd30 inlineBlock">
+	                        <label for="mAvata1" class="block ht100 mgl35"><img alt="mAvata1" class="wd30 block ht100 wd100" src="../img/mAbatar1.jpg"></label>
+	                        <input type="radio" name="avata" id="mAvata1" class="w3-col m4 mgl45">
+	                     </div>            
+	                     <div class="wd30 inlineBlock">
+	                        <label for="mAvata2" class="block ht100 mgl35"><img alt="mAvata1" class="wd30 block ht100 wd100" src="../img/mAbatar2.jpg"></label>
+	                        <input type="radio" name="avata" id="mAvata2" class="w3-col m4 mgl45">
+	                     </div>   
+	                     <div class="wd30 inlineBlock">
+	                        <label for="mAvata3" class="block ht100 mgl35"><img alt="mAvata1" class="wd30 block ht100 wd100" src="../img/mAbatar3.jpg"></label>
+	                        <input type="radio" name="avata" id="mAvata3" class="w3-col m4 mgl45">
+	                     </div>   
+	                  </div>
+	                  <div id="wCbxDiv">
+	                     <div class="wd30 inlineBlock">
+	                        <label for="wAvata1" class="block ht100 mgl35"><img alt="mAvata1" class="wd30 block ht100 wd100" src="../img/wAbatar1.jpg"></label>
+	                        <input type="radio" name="avata" id="wAvata1" class="w3-col m4 mgl45">
+	                     </div>            
+	                     <div class="wd30 inlineBlock">
+	                        <label for="wAvata2" class="block ht100 mgl35"><img alt="mAvata1" class="wd30 block ht100 wd100" src="../img/wAbatar2.jpg"></label>
+	                        <input type="radio" name="avata" id="wAvata2" class="w3-col m4 mgl45">
+	                     </div>   
+	                     <div class="wd30 inlineBlock">
+	                        <label for="wAvata3" class="block ht100 mgl35"><img alt="mAvata1" class="wd30 block ht100 wd100" src="../img/wAbatar3.jpg"></label>
+	                        <input type="radio" name="avata" id="wAvata3" class="w3-col m4 mgl45">
+	                     </div>   
+	                  </div>
+               </div>   
 				</div>
 			</div>
 			<!-- 버튼 태그 -->
@@ -128,21 +133,44 @@
 			</div>
 		</div>
 	</div>
-	<!-- <script type="text/javascript">
-	/* document.getElementsByName('gen').onclick = function(){
-		console.log('test용');
-		var gen = 	document.getElementsByName('gen').val;
-		console.log('test용');
-		if(gen == 'm'){
-			document.getElementById('wAvata1').style.visibility='hidden';
-			document.getElementById('wAvata2').style.visibility='hidden';
-			document.getElementById('wAvata3').style.visibility='hidden';
-		}else{
-			document.getElementById('mAvata1').style.visibility='hidden';
-			document.getElementById('mAvata2').style.visibility='hidden';
-			document.getElementById('mAvata3').style.visibility='hidden';
+<script type="text/javascript">
+	document.getElementById('lbtn').onclick = function(){
+		document.get ElementById('frm').submit();
+		// 데이터 유효성검사
+		var sid = document.getElementById('id').value;
+		var sid = document.getElementById('id').value;
+		
+		// 1번 방법
+		if(!sid){
+			// 이 블럭을 실행하는 경우는 아이디를 입력하지 않은 경우이므로
+			// 아이디를 입력하도록 유도한다.
+			document.getElementById('id').focus;
+			return;
 		}
-	} */
-	</script> -->
+		if(!spw){
+			document.getElementById('pw').focus;
+			return;
+		}
+		
+		/* 
+		// 2번 방법
+		if(!sid || !spw){ 
+			// !sid ==> 아이디값을 읽었는데 읽은 데이터가 없는 경우 (비밀번호도 마찬가지)
+			/* 
+				자바스크립트에서는
+				변수를 조건식에 사용하게 되는경우
+				변수에 데이터가 채워져있는 경우는 true로 처리하고
+				비어있는 경우 false로 처리하게 된다.
+			*/
+			
+			// 이 경우에는 비어있는 태그가 존재한다는 것이므로 다시 입력하도록 유도한다.
+			// 따라서 즉시 실행중인 이 함수를 종료시킨다.
+			*/
+			return;
+		}
+		
+		document.getElementById('frm').submit();
+}
+</script>
 </body>
 </html>
